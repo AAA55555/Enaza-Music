@@ -1,0 +1,19 @@
+$body-size: 20px;
+$blue: #007AFF;
+$body-family: 'Roboto', sans-serif;
+$body-line-height: 120%;
+$body-color: #808080;
+$text-strong: #4F4F4F;
+$text: white;
+$fullhd: 1212px;
+$gap: 10px;
+
+.container {
+  @include md-minus{
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+}
+
+//должно быть в конце этого файла
+@import "@/node_modules/bulma";

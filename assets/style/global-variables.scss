@@ -1,0 +1,39 @@
+//colors
+$titleColor: #4F4F4F;
+$textGrey: #A7A7A7;
+
+// Media sizes
+
+$xs: 600px;
+$sm: 768px;
+$md: 992px;
+$lg: 1172px;
+
+// Media queries
+
+@mixin xs-plus {
+  @media (min-width: $xs) { @content; }
+}
+@mixin sm-plus {
+  @media (min-width: $sm) { @content; }
+}
+@mixin md-plus {
+  @media (min-width: $md) { @content; }
+}
+@mixin lg-plus {
+  @media (min-width: $lg) { @content; }
+}
+
+
+@mixin xs-only {
+  @media (max-width: $xs - 1px) { @content; }
+}
+@mixin sm-minus {
+  @media (max-width: $sm - 1px) { @content; }
+}
+@mixin md-minus {
+  @media (max-width: $md - 1px) { @content; }
+}
+@mixin lg-minus {
+  @media (max-width: $lg - 1px) { @content; }
+}
